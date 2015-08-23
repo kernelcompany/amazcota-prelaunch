@@ -1,7 +1,7 @@
 {
-  "name": "amazcota-web-prelunch",
+  "name": "amazcota-web-prelaunch",
   "version": "1.0.0",
-  "description": "Amazcota prelunch web app",
+  "description": "Amazcota pre-launch web app",
   "main": "server.js",
   "scripts": {
     "test": "npm test"
@@ -14,7 +14,7 @@
   "author": "serchserch",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.8.2",    
+    "browser-sync": "^2.8.2",
     "debug": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
