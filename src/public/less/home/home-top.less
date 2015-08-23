@@ -1,0 +1,120 @@
+.home-top {
+  height: 100vh;
+  width: 100vw;
+  &-container {
+    text-align: center;
+    .unselectable;
+    svg {
+      display: none;
+    }
+    img {
+      margin: 0;
+      width: 100px;
+    }
+    >h1 {
+      position: absolute;
+      color: @bone-color;
+    }
+    button {
+      min-width: 150px;
+      max-width: 210px;
+      width: 80%;
+      border: 1px solid @blue-facebook-color;
+      height: 50px;
+      padding: 0;
+      background: transparent;
+      color: @blue-facebook-color;
+      outline: none;
+      position: relative;
+      .waves__circle {
+        background: darken(@blue-facebook-color, 10%);
+      }
+      >i {
+        display: inline-block;
+        font-size: 24px;
+        font-style: normal;
+        margin: 0 0.3em;
+      }
+      >span {
+        display: inline-block;
+        margin: 0 0.3em;
+        position: relative;
+        top: -2px;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  &-slogan {
+    margin: 1em 0 2em;
+    >h2 {
+      position: relative;
+      background: @bone-color;
+      display: inline;
+      padding: 0 0.5em;
+      font-size: 18px;
+      font-weight: 300;
+      font-style: italic;
+    }
+    >hr {
+      position: relative;
+      height: 1px;
+      width: 80%;
+      max-width: 350px;
+      background: lighten(@coal-color, 60%);
+      border: none;
+      top: 1.5em;
+    }
+  }
+
+
+  .go-scroll {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 2em auto 0;
+    // background: red;
+    >span {
+      position: relative;
+      display: block;
+      width: 12px;
+      height: 12px;
+      left: 0;
+      margin: 0 auto;
+      transform: rotate(45deg);
+      // background: @bone-color;
+      >i {
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid black;
+        position: relative;
+        animation: diamond-fx 0.8s linear;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+      }
+      &:nth-child(1) {
+        top: 22px;
+      }
+      &:nth-child(2) {
+        top: 18px;
+        >i{
+          animation-direction: alternate;
+        }
+      }
+    }
+  }
+}
+
+/* waves animation */
+@keyframes diamond-fx {
+    0% {
+        transform: translate3d(-6px, -6px, 0);
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0);
+    }
+}

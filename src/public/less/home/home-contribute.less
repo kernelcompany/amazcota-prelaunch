@@ -1,0 +1,37 @@
+.home-contribute {
+  text-align: center;
+  &-container {
+    .unselectable;
+    .quote {
+      margin: 3em 0;
+      position: relative;
+      >span {
+        max-width: 280px;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+      }
+      >small {
+        font-size: 52px;
+        position: absolute;
+        font-family: Oswald;
+        position: relative;
+        color: @gold-color;
+        line-height: 0;
+        &:nth-child(1) {
+          top: -10px;
+          left: 5px;
+        }
+        &:nth-child(3) {
+          top: 40px;
+          right: 5px;
+        }
+      }
+      .source{
+        font-size: 12px;
+        color: @gold-color
+      }
+    }
+  }
+}

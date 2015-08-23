@@ -1,0 +1,300 @@
+.vh-wrap {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.vh {
+  display: table-cell;
+  vertical-align: middle;
+}
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* waves container */
+.waves__wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+/* waves circle */
+.waves__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+}
+.waves__wrap.active .waves__circle {
+  animation: waves 0.3s ease-in;
+}
+/* waves animation */
+@keyframes waves {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    width: 300%;
+    padding-bottom: 300%;
+    opacity: 0;
+  }
+}
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #f6f6f3;
+  color: #242424;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.section-title > span {
+  font-size: 42px;
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+.section-title-braket {
+  position: absolute;
+  display: inline-block;
+  font-size: 58px;
+  font-weight: 300;
+}
+.section-title-braket:nth-child(1) {
+  margin: -0.25em 0 0 -0.5em;
+}
+.section-title-braket:nth-child(3) {
+  margin: -0.25em 0 0 0.25em;
+}
+.home-top {
+  height: 100vh;
+  width: 100vw;
+}
+.home-top-container {
+  text-align: center;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.home-top-container svg {
+  display: none;
+}
+.home-top-container img {
+  margin: 0;
+  width: 100px;
+}
+.home-top-container > h1 {
+  position: absolute;
+  color: #f6f6f3;
+}
+.home-top-container button {
+  min-width: 150px;
+  max-width: 210px;
+  width: 80%;
+  border: 1px solid #3b5998;
+  height: 50px;
+  padding: 0;
+  background: transparent;
+  color: #3b5998;
+  outline: none;
+  position: relative;
+}
+.home-top-container button .waves__circle {
+  background: #2d4373;
+}
+.home-top-container button > i {
+  display: inline-block;
+  font-size: 24px;
+  font-style: normal;
+  margin: 0 0.3em;
+}
+.home-top-container button > span {
+  display: inline-block;
+  margin: 0 0.3em;
+  position: relative;
+  top: -2px;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.home-top-slogan {
+  margin: 1em 0 2em;
+}
+.home-top-slogan > h2 {
+  position: relative;
+  background: #f6f6f3;
+  display: inline;
+  padding: 0 0.5em;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+}
+.home-top-slogan > hr {
+  position: relative;
+  height: 1px;
+  width: 80%;
+  max-width: 350px;
+  background: #bdbdbd;
+  border: none;
+  top: 1.5em;
+}
+.home-top .go-scroll {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 2em auto 0;
+}
+.home-top .go-scroll > span {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  margin: 0 auto;
+  transform: rotate(45deg);
+}
+.home-top .go-scroll > span > i {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  position: relative;
+  animation: diamond-fx 0.8s linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.home-top .go-scroll > span:nth-child(1) {
+  top: 22px;
+}
+.home-top .go-scroll > span:nth-child(2) {
+  top: 18px;
+}
+.home-top .go-scroll > span:nth-child(2) > i {
+  animation-direction: alternate;
+}
+/* waves animation */
+@keyframes diamond-fx {
+  0% {
+    transform: translate3d(-6px, -6px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+.home-adoption-persuasion {
+  height: 100vh;
+  width: 100vw;
+}
+.home-adoption-persuasion-container {
+  text-align: center;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.home-adoption-persuasion-container > figure.frame-picture {
+  max-width: 450px;
+  width: 75vw;
+  padding: 50px;
+  background: #cacaca;
+  margin: 0 auto;
+  position: relative;
+}
+.home-adoption-persuasion-container > figure.frame-picture > img {
+  display: inline-block;
+  width: 100%;
+}
+.home-adoption-persuasion-container > figure.frame-picture > .sweet-copy {
+  width: 100%;
+  position: absolute;
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.home-adoption-persuasion-container > figure.frame-picture > .sweet-copy:nth-child(2) {
+  transform-origin: left top 0;
+  transform: rotate(-90deg);
+  bottom: -16px;
+  left: 0%;
+  margin: 0 0 0 -16px;
+}
+.home-adoption-persuasion-container > figure.frame-picture > .sweet-copy:nth-child(3) {
+  transform-origin: left top 0;
+  transform: rotate(90deg);
+  left: 100%;
+  top: 0px;
+  margin: 0 0 0 16px;
+}
+.home-adoption-persuasion-container > figure.frame-picture > .hashtag {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  font-size: 52px;
+  font-family: Oswald;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.home-contribute {
+  text-align: center;
+}
+.home-contribute-container {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.home-contribute-container .quote {
+  margin: 3em 0;
+  position: relative;
+}
+.home-contribute-container .quote > span {
+  max-width: 280px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+.home-contribute-container .quote > small {
+  font-size: 52px;
+  position: absolute;
+  font-family: Oswald;
+  position: relative;
+  color: #666638;
+  line-height: 0;
+}
+.home-contribute-container .quote > small:nth-child(1) {
+  top: -10px;
+  left: 5px;
+}
+.home-contribute-container .quote > small:nth-child(3) {
+  top: 40px;
+  right: 5px;
+}
+.home-contribute-container .quote .source {
+  font-size: 12px;
+  color: #666638;
+}
